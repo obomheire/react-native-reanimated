@@ -1,0 +1,8 @@
+npx create-react-native-app app_name
+expo init app_name
+
+yarn add @babel/preset-env@7.1.6
+
+expo install react-native-safe-area-context@3.3.2 react-native-screens@3.10.1 react-native-gesture-handler@2.1.0 react-native-reanimated@2.3.1 @react-native-masked-view/masked-view
+ 
+expo r -c
