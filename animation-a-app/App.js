@@ -23,6 +23,7 @@ export default function App() {
   const scale = useSharedValue(1)
 
   const reanimatedStyle = useAnimatedStyle(() => {
+    
     return {
       opacity: progress.value,
       borderRadius: (progress.value * SIZE) / 2,
@@ -37,7 +38,12 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Animated.View style={[{ height: SIZE, width: SIZE, backgroundColor: 'blue' }, reanimatedStyle]} />
+      <Animated.View
+        style={[
+          { height: SIZE, width: SIZE, backgroundColor: "blue" },
+          reanimatedStyle,
+        ]}
+      />
     </View>
   );
 }
